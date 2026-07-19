@@ -3,7 +3,7 @@
 ## Environment
 
 - Hypervisor: Oracle VirtualBox
-- Guest OS: Windows 11 Pro/Home
+- Guest OS: Windows 11 Pro
 - RAM: 6 GB
 - CPU: 4 Cores
 - Disk: 80 GB Dynamic
