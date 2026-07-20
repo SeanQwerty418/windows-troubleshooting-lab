@@ -89,14 +89,14 @@ nslookup microsoft.com
 ```
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ResetServerAddresses
 ```
-![DNS Restored](screenshots/10_dns-restored.png)
+![DNS Restored](screenshot/10_dns-restored.png)
 
 10. Verified successful resolution
 
 ```
 nslookup microsoft.com
 ```
-![ping-microsoft-success](screenshot/11_pingmicrosoft-success.png)
+![ping-microsoft-success](screenshot/11_ping-microsoft-success.png)
 
 ---
 
