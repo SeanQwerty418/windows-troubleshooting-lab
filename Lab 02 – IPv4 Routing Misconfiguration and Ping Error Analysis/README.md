@@ -34,3 +34,5 @@ Two destinations were tested during each scenario:
 ```powershell
 ping 10.0.2.2
 ping 8.8.8.8
+
+##Scenario 1 - Incorrect Default Gateway
