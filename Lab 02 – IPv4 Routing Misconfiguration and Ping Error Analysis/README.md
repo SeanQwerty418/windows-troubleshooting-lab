@@ -170,7 +170,7 @@ However, no default route existed for destinations outside the local subnet. Win
 
 ---
 
-# Scenario 3 – Incorrect Static IPv4 Address
+# Scenario 3 – Incorrect Static IPv4 Address with No Default Gateway
 
 ## Fault Configuration
 
@@ -250,7 +250,7 @@ Because no default gateway was configured, Windows had no usable route to either
 |---|---|---|---|
 | Correct IP with incorrect gateway | Successful | Timeout or destination unreachable | Local route works, but the configured next hop cannot be reached |
 | Correct IP with no gateway | Successful | General failure | Local route exists, but no default route exists |
-| Incorrect IP with no gateway | General failure | General failure | Neither destination matches an available route |
+| Incorrect IP with no gateway | General failure | General failure | The client is on the wrong logical subnet and has no route to either destination |
 | DHCP restored | Successful | Successful | Correct IP address, subnet mask and gateway restored |
 
 ---
