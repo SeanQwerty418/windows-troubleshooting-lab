@@ -30,14 +30,14 @@ Simulate a DNS resolution failure by configuring an invalid DNS server and troub
 ```
 Get-NetAdapter
 ```
-![Get-NetAdapter](screenshots/01_Get-NetAdapter.png)
+![Get-NetAdapter](screenshot/01_Get-NetAdapter.png)
 
 2. Verified IP configuration
 
 ```
 ipconfig /all
 ```
-![ipconfig](screenshots/02_ipconfig_all.png)
+![ipconfig](screenshot/02_ipconfig_all.png)
 
 3. Tested Internet connectivity
 
@@ -45,35 +45,35 @@ ipconfig /all
 ping 8.8.8.8
 ping google.com
 ```
-![ping-google](03_ping-google.png)
+![ping-google](screenshot/03_ping-google.png)
 
 4. Verified DNS resolution
 
 ```
 nslookup google.com
 ```
-![nslookup](04_nslookup.png)
+![nslookup](screenshot/04_nslookup.png)
 
 5. Changed DNS server
 
 ```
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 192.0.2.1
 ```
-![bad-dns](05_bad-dns.png)
+![bad-dns](screenshot/05_bad-dns.png)
 
 6. Verified DNS configuration
 
 ```
 Get-DnsClientServerAddress
 ```
-![ping-ip-success](06_ping-ip-success.png)
+![ping-ip-success](screenshot/06_ping-ip-success.png)
 
 7. Cleared DNS cache
 
 ```
 ipconfig /flushdns
 ```
-![flushed-dns-cache](07_flushed-dns-cache.png)
+![flushed-dns-cache](screenshot/07_flushed-dns-cache.png)
 
 8. Tested DNS resolution again
 
@@ -81,8 +81,8 @@ ipconfig /flushdns
 ping microsoft.com
 nslookup microsoft.com
 ```
-![ping-domain-failed](08_ping-domain-failed.png)
-![nslookup-failed](09_nslookup-failsd.png)
+![ping-domain-failed](screenshot/08_ping-domain-failed.png)
+![nslookup-failed](screenshot/09_nslookup-failsd.png)
 
 9. Restored DNS
 
@@ -96,7 +96,7 @@ Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ResetServerAddresses
 ```
 nslookup microsoft.com
 ```
-![ping-microsoft-success](11_pingmicrosoft-success.png)
+![ping-microsoft-success](screenshot/11_pingmicrosoft-success.png)
 
 ---
 
