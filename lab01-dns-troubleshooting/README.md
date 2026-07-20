@@ -82,7 +82,7 @@ ping microsoft.com
 nslookup microsoft.com
 ```
 ![ping-domain-failed](screenshot/08_ping-domain-failed.png)
-![nslookup-failed](screenshot/09_nslookup-failsd.png)
+![nslookup-failed](screenshot/09_nslookup-failed.png)
 
 9. Restored DNS
 
