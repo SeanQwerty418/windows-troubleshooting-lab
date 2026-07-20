@@ -23,7 +23,7 @@ The purpose of the lab is to observe how each configuration affects communicatio
 - Correct default gateway: `10.0.2.2`
 - Local test destination: `10.0.2.2`
 - Remote test destination: `8.8.8.8`
-![normal-ip-state](00_normal-ip-state)
+![normal-ip-state](screenshots/00_normal-ip-state)
 
 ---
 
